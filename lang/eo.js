@@ -16,21 +16,21 @@
     return moment.lang('eo', {
         months : "januaro_februaro_marto_aprilo_majo_junio_julio_aŭgusto_septembro_oktobro_novembro_decembro".split("_"),
         monthsShort : "jan_feb_mar_apr_maj_jun_jul_aŭg_sep_okt_nov_dec".split("_"),
-        weekdays : "Dimanĉo_Lundo_Mardo_Merkredo_Ĵaŭdo_Vendredo_Sabato".split("_"),
-        weekdaysShort : "Dim_Lun_Mard_Merk_Ĵaŭ_Ven_Sab".split("_"),
+        weekdays : "dimanĉo_lundo_mardo_merkredo_ĵaŭdo_vendredo_sabato".split("_"),
+        weekdaysShort : "dim_lun_mar_mer_ĵaŭ_ven_sab".split("_"),
         weekdaysMin : "Di_Lu_Ma_Me_Ĵa_Ve_Sa".split("_"),
         longDateFormat : {
             LT : "HH:mm",
             L : "YYYY-MM-DD",
-            LL : "D[-an de] MMMM, YYYY",
-            LLL : "D[-an de] MMMM, YYYY LT",
-            LLLL : "dddd, [la] D[-an de] MMMM, YYYY LT"
+            LL : "D[-a de] MMMM, YYYY",
+            LLL : "D[-a de] MMMM, YYYY LT",
+            LLLL : "dddd, [la] D[-a de] MMMM, YYYY LT"
         },
         meridiem : function (hours, minutes, isLower) {
             if (hours > 11) {
-                return isLower ? 'p.t.m.' : 'P.T.M.';
+                return isLower ? 'ptm.' : 'PTM.';
             } else {
-                return isLower ? 'a.t.m.' : 'A.T.M.';
+                return isLower ? 'atm.' : 'ATM.';
             }
         },
         calendar : {
